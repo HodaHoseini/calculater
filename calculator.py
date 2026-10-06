@@ -19,13 +19,13 @@ dictionary = {
 def calculator():
     '''This is  calculator'''
     end = False
-    num1 = int(input("Enter the first number: "))
+    num1 = float(input("Enter the first number: "))
     while not end:
 
         for key in dictionary:
             print(key)
         operation = input("Enter the operation: ")
-        num2 = int(input("Enter next number: "))
+        num2 = float(input("Enter next number: "))
         function = dictionary[operation]
         answer = function(num1, num2)
         print(f"{num1} {operation} {num2} = {answer}")
